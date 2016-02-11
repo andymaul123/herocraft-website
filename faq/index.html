@@ -1,0 +1,41 @@
+---
+layout: default
+tagClass: faq
+---
+<script src="../assets/js/jquery.accordion.js"></script>
+<p>FAQ Accordions for all!</p>
+<div id="only-one" data-accordion-group>
+	<div data-accordion>
+	<button data-control>Accordion 1</button>
+		<div data-content>
+			<article>Item</article>
+			<article>Item</article>
+			<article>Item</article>
+			<article>Item</article>
+			<article>Item</article>
+			<article>Item</article>
+		</div>
+	</div>
+	<div data-accordion>
+	<button data-control>Accordion 2</button>
+		<div data-content>
+			<article>Item</article>
+			<article>Item</article>
+			<article>Item</article>
+			<article>Item</article>
+			<article>Item</article>
+			<article>Item</article>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+        $('#only-one [data-accordion]').accordion({
+	        transitionEasing: 'cubic-bezier(0.455, 0.030, 0.515, 0.955)',
+	        transitionSpeed: 200
+        });
+      });
+</script>
+
+
